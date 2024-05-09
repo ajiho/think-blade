@@ -1,0 +1,50 @@
+{
+  "name": "ajiho/think-blade",
+  "description": "Blade integration for thinkphp6",
+  "keywords": [
+    "thinkphp6",
+    "blade",
+    "templating"
+  ],
+  "homepage": "https://github.com/ajiho/think-blade",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "ajiho\\blade\\": "src/"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "ajiho",
+      "email": "lujiahao@88.com",
+      "homepage": "https://github.com/ajiho",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "topthink/framework": "^6.0",
+    "illuminate/view": "^7.0",
+    "illuminate/config": "^7.0",
+    "ajiho/illuminate-files-scoper": "^1.0"
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "ajiho\\blade\\Service"
+      ],
+      "config": {
+        "blade": "src/config.php"
+      }
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "ajiho/illuminate-files-scoper": true
+    }
+  }
+}
